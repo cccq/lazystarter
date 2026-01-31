@@ -51,6 +51,7 @@ require("lazy").setup({
     },
   },
   rocks = {
+    -- disable luarocks
     enabled = false,
   },
 })
