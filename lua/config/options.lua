@@ -2,6 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- set language to English
+if vim.fn.has("win32") == 1 then
+  vim.fn.setenv("LANG", "en_US.UTF-8")
+end
+
 -- neovide configuration
 if vim.g.neovide then
   local os_name = vim.uv.os_uname().sysname
